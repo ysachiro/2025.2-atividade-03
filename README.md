@@ -4,14 +4,14 @@
 - [X] Fork desse repositório para a conta pessoal
 - [X] criar o arquivo index.html (pode adicioanr css)
 - [X] criar um projeto no vercel e conectar ao seu repositório local
-- [] criar link para atividades abaixo
-  - [ ] criar link para o arquivo tabelas.html (atividade 3)
-  - [ ] criar link para o arquivo cards.html (atividade 4)
-  - [ ] criar link para o arquivo landingpage.html (atividade 5)
-  - [ ] criar link para o arquivo replica.html (atividade 6)
+- [X] criar link para atividades abaixo
+  - [X] criar link para o arquivo tabelas.html (atividade 3)
+  - [X] criar link para o arquivo cards.html (atividade 4)
+  - [X] criar link para o arquivo landingpage.html (atividade 5)
+  - [X] criar link para o arquivo replica.html (atividade 6)
 
 ## Atividades
 - [X] [Atividade 03 - Tabelas](tabelas.md)
-- [ ] [Atividade 04 - Cards](cards.md)
-- [ ] [Atividade 05 - landing page](landingpage.md)
-- [ ] [Atividade 06 - replica do gemini](replica.md)
+- [X] [Atividade 04 - Cards](cards.md)
+- [X] [Atividade 05 - landing page](landingpage.md)
+- [X] [Atividade 06 - replica do gemini](replica.md)
