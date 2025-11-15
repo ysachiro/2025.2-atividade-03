@@ -141,14 +141,14 @@ td ul li {
 
 ## Instruções para Realizar a Atividade
 
-- [ ] **Crie um arquivo HTML** chamado `tabelas.html`
-- [ ] **Crie um arquivo CSS** chamado `tabelas.css`
-- [ ] **Crie a estrutura inicial do HTML 5** no arquivo `tabelas.html`
-- [ ] **Defina o título da página** coloque a identificação no arquivo `tabelas.html`. Lembre de atualizar também o `title`.
-- [ ] **Copie o código CSS** fornecido acima para o arquivo `tabelas.css`
-- [ ] **Abra o arquivo HTML** em seu navegador para visualizar a tabela
-- [ ] **Experimente modificar** as cores, tamanhos e estilos para personalizar sua tabela
-- [ ] **Adicione as disciplinas**: matemática discreta, programação de computadores , e sistemas digitais
+- [X] **Crie um arquivo HTML** chamado `tabelas.html`
+- [X] **Crie um arquivo CSS** chamado `tabelas.css`
+- [X] **Crie a estrutura inicial do HTML 5** no arquivo `tabelas.html`
+- [x] **Defina o título da página** coloque a identificação no arquivo `tabelas.html`. Lembre de atualizar também o `title`.
+- [x] **Copie o código CSS** fornecido acima para o arquivo `tabelas.css`
+- [x] **Abra o arquivo HTML** em seu navegador para visualizar a tabela
+- [x] **Experimente modificar** as cores, tamanhos e estilos para personalizar sua tabela
+- [x] **Adicione as disciplinas**: matemática discreta, programação de computadores , e sistemas digitais
 
 ## Desafios Adicionais (Opcional)
 

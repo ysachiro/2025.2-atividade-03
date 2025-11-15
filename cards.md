@@ -281,14 +281,14 @@ Depois de implementar o card básico, tente os seguintes desafios:
 
 ## ✅ Checklist de Entrega
 
-- [ ] Arquivo `cards.html` criado com a estrutura correta
-- [ ] Arquivo `cards.css` criado com estilização adequada
-- [ ] Card contém título com nome da disciplina e professores
-- [ ] Card contém conteúdo com objetivo, carga horária, tecnologias e conceitos
-- [ ] Card contém rodapé com horários e locais
-- [ ] Design é responsivo e funciona em diferentes tamanhos de tela
-- [ ] Código está bem indentado e organizado
-- [ ] Projeto está versionado no GitHub
+- [X] Arquivo `cards.html` criado com a estrutura correta
+- [X] Arquivo `cards.css` criado com estilização adequada
+- [X] Card contém título com nome da disciplina e professores
+- [X] Card contém conteúdo com objetivo, carga horária, tecnologias e conceitos
+- [X] Card contém rodapé com horários e locais
+- [X] Design é responsivo e funciona em diferentes tamanhos de tela
+- [X] Código está bem indentado e organizado
+- [X] Projeto está versionado no GitHub
 
 ---
 

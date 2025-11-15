@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gemini - Replica</title>
+    <link rel="stylesheet" href="replica.css" />
+</head>
+<body>
+    <!-- Barra Lateral -->
+    <aside class="sidebar" id="sidebar" aria-label="Barra lateral">
+        <!-- Menu Hambúrguer -->
+        <div class="sidebar-header">
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+            <div class="brand">
+                <span class="brand-logo" aria-hidden="true">◇</span>
+                <span class="brand-text">Gemini</span>
+            </div>
+        </div>
+
+        <!-- Nova Conversa -->
+        <div class="new-chat">
+            <button class="new-chat-btn" aria-label="Nova conversa">
+                <span class="icon" aria-hidden="true">✏️</span>
+                <span class="text">Nova conversa</span>
+            </button>
+            <button class="expand-btn" aria-label="Expandir conversa">
+                <span class="icon" aria-hidden="true">⛶</span>
+            </button>
+        </div>
+
+        <!-- Veja alguns Gems -->
+        <div class="gems-section">
+            <button class="gems-btn" aria-label="Veja alguns Gems">
+                <span class="icon" aria-hidden="true">♦️</span>
+                <span class="text">Veja alguns Gems</span>
+            </button>
+        </div>
+
+        <!-- Seção Recentes -->
+        <div class="recent-section" aria-live="polite">
+            <h3>Recentes</h3>
+            <ul class="recent-list" role="list">
+                <li><a href="#" role="link">O Que é Uma Landing Page</a></li>
+                <li><a href="#">Tradução de "Tie" para Português</a></li>
+                <li><a href="#">Tradução de Frase Poética em Inglês</a></li>
+                <li><a href="#">como avaliação introdutória de html ...</a></li>
+                <li><a href="#">Box-sizing: Border-box para layouts</a></li>
+                <li><a href="#">KORE11: Rendimentos 2025 em JSON</a></li>
+                <li><a href="#">CSS Display: Valores e Exemplos</a></li>
+                <li><a href="#">Corpo dos Fungos: Hifas e Micélio</a></li>
+            </ul>
+        </div>
+
+        <!-- Rodapé / Configurações -->
+        <div class="sidebar-footer">
+            <button class="settings-btn" aria-label="Configurações e ajuda">
+                <span class="icon" aria-hidden="true">⚙️</span>
+                <span class="text">Configurações e ajuda</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content" id="mainContent" tabindex="-1">
+        <!-- Barra Superior -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <button class="search-btn" aria-label="Buscar">
+                    <span class="icon" aria-hidden="true">🔍</span>
+                </button>
+                <h1 class="logo">Gemini</h1>
+            </div>
+
+            <div class="top-bar-right">
+                <button class="upgrade-btn" aria-label="Fazer upgrade">
+                    <span class="icon" aria-hidden="true">✨</span>
+                    <span class="text">Faça upgrade para o Google AI Plus</span>
+                </button>
+
+                <div class="profile-pic" title="Perfil">
+                    <img src="https://via.placeholder.com/40" alt="Foto do usuário" />
+                </div>
+            </div>
+        </header>
+
+        <!-- Área de Chat -->
+        <div class="chat-area">
+            <div class="welcome-message" role="region" aria-label="Mensagem de boas-vindas">
+                <h2>Olá, Leonardo</h2>
+                <p class="welcome-sub">Como posso ajudar você hoje?</p>
+            </div>
+
+            <!-- Campo de Entrada -->
+            <div class="input-container" role="form" aria-label="Campo de entrada do Gemini">
+                <div class="input-box">
+                    <input
+                        type="text"
+                        placeholder="Peça ao Gemini"
+                        class="chat-input"
+                        id="chatInput"
+                        aria-label="Peça ao Gemini"
+                    />
+
+                    <div class="input-actions" role="group" aria-label="Ações do campo">
+                        <button class="action-btn" aria-label="Adicionar">
+                            <span class="icon" aria-hidden="true">＋</span>
+                        </button>
+
+                        <button class="tools-btn" aria-label="Ferramentas">
+                            <span class="icon" aria-hidden="true">🛠️</span>
+                            <span class="text">Ferramentas</span>
+                        </button>
+
+                        <div class="version-wrap">
+                            <button class="version-selector" id="versionBtn" aria-haspopup="listbox" aria-expanded="false">
+                                <span class="text">2.5 Pro</span>
+                                <span class="icon" aria-hidden="true">▾</span>
+                            </button>
+                            <ul class="version-list" id="versionList" role="listbox" aria-label="Modelos" hidden>
+                                <li role="option" tabindex="0">2.5 Pro</li>
+                                <li role="option" tabindex="0">2.0</li>
+                                <li role="option" tabindex="0">1.0</li>
+                            </ul>
+                        </div>
+
+                        <button class="mic-btn" aria-label="Entrada por voz">
+                            <span class="icon" aria-hidden="true">🎤</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- espaço para mensagens futuras -->
+            <div class="conversation-placeholder" aria-hidden="true">
+                <p>Use o campo abaixo para começar uma conversa com o Gemini.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Toggle sidebar on mobile
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+
+        // Accessible version dropdown
+        const versionBtn = document.getElementById('versionBtn');
+        const versionList = document.getElementById('versionList');
+
+        versionBtn.addEventListener('click', () => {
+            const expanded = versionBtn.getAttribute('aria-expanded') === 'true';
+            versionBtn.setAttribute('aria-expanded', String(!expanded));
+            if (expanded) {
+                versionList.hidden = true;
+            } else {
+                versionList.hidden = false;
+                versionList.querySelector('[role="option"]').focus();
+            }
+        });
+
+        // Close dropdown when click outside
+        document.addEventListener('click', (e) => {
+            if (!versionBtn.contains(e.target) && !versionList.contains(e.target)) {
+                versionList.hidden = true;
+                versionBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // basic keyboard support for version options
+        document.querySelectorAll('.version-list [role="option"]').forEach((opt) => {
+            opt.addEventListener('click', () => {
+                versionBtn.querySelector('.text').textContent = opt.textContent;
+                versionList.hidden = true;
+                versionBtn.setAttribute('aria-expanded', 'false');
+            });
+            opt.addEventListener('keydown', (ev) => {
+                if (ev.key === 'Enter' || ev.key === ' ') {
+                    ev.preventDefault();
+                    opt.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
