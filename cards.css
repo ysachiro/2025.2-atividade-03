@@ -91,7 +91,7 @@ body {
 .tecnologias li {
     display: inline-block;
     background-color: #667eea;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 6px 15px;
     margin: 5px;
     border-radius: 20px;
